@@ -8,9 +8,24 @@
   --lynx-white-color: #f7f7f7;
   --violet-color: #534837;
   --lynx-gray: #c5c5c5;
-  --green-color: green;
+
+  --green-color: #596;
+  --yellow-color: #ffff00;
 
   font-family: "Raleway", sans-serif;
+}
+
+/* Background colors */
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-gray {
+  background-color: var(--gray-color);
 }
 
 /* CSS for Avatar  */
@@ -22,7 +37,6 @@
 
 .avatar-text {
   border-radius: 50%;
-  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +80,6 @@
   position: absolute;
   top: 70%;
   right: 0px;
-  background-color: var(--green-color);
   border: 2px solid var(--white-color);
   border-radius: 50%;
 }
@@ -77,7 +90,6 @@
   position: absolute;
   top: 0;
   right: -18%;
-  background-color: green;
   border: 2px solid var(--white-color);
   border-radius: 50%;
 }
