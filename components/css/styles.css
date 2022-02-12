@@ -101,3 +101,110 @@
   color: var(--white-color);
   font-size: 0.25em;
 }
+
+/* CSS for Alert  */
+
+.alert {
+  width: auto;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: var(--white-color);
+  border-radius: 4px;
+}
+
+.alert i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.alert-primary {
+  background-color: var(--primary-color);
+}
+
+.alert-secondary {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+
+.alert-success {
+  background-color: var(--green-color);
+}
+
+.alert-warning {
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.alert-info {
+  background-color: var(--action-color);
+}
+
+.alert-dark {
+  background-color: var(--black-color);
+  opacity: 0.7;
+}
+
+/* CSS for Buttons */
+
+.btn {
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+
+.btn-success {
+  background-color: var(--green-color);
+}
+
+.btn-warning {
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.btn-info {
+  background-color: var(--action-color);
+}
+
+.btn-dark {
+  background-color: var(--black-color);
+}
+
+.btn-link {
+  border: none;
+  font-size: 1.25rem;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-link-primary {
+  color: var(--primary-color);
+}
+
+.btn-link-success {
+  color: var(--green-color);
+}
+
+.btn-link-info {
+  color: var(--action-color);
+}
+
+.btn-floating {
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px var(--black-color);
+}
