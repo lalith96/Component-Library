@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #ff3b30;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --gray-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #efefef;
+  --lynx-white-color: #f7f7f7;
+  --violet-color: #534837;
+  --lynx-gray: #c5c5c5;
+
+  --green-color: #596;
+  --yellow-color: #ffff00;
+
+  font-family: "Raleway", sans-serif;
+}
+
+/* Background colors */
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-gray {
+  background-color: var(--gray-color);
+}
+
+/* CSS for Avatar  */
+
+.avatar-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-text {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-lg {
+  width: 10rem;
+  height: 10rem;
+  font-size: 3rem;
+}
+
+.avatar-md {
+  width: 7.5rem;
+  height: 7.5rem;
+  font-size: 2rem;
+}
+
+.avatar-sm {
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.5rem;
+}
+
+.avatar-xs {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+/* CSS for Badge  */
+
+.badge {
+  display: inline-block;
+  position: relative;
+  font-size: 3em;
+}
+
+.badge-on-avatar {
+  width: 13%;
+  height: 13%;
+  position: absolute;
+  top: 70%;
+  right: 0px;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+}
+
+.badge-on-icon {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  right: -18%;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+}
+
+.badge-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 0.25em;
+}
