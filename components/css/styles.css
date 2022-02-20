@@ -306,6 +306,7 @@ p {
 
 .card-horizontal {
   display: flex;
+  flex-direction: row;
   width: 600px;
   border-radius: 8px;
 }
