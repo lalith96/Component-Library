@@ -1,0 +1,10 @@
+/* CSS for Image */
+
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.round-image {
+  border-radius: 50%;
+}

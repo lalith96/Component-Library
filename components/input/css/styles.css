@@ -1,0 +1,21 @@
+.input-container {
+  width: 100%;
+  height: auto;
+}
+
+.input-container input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--action-color);
+  border-radius: 4px;
+  padding-left: 8px;
+  margin: 10px 0px;
+}
+
+.success-msg span {
+  color: var(--green-color);
+}
+
+.error-msg span {
+  color: var(--primary-color);
+}
