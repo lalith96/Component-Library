@@ -1,5 +1,7 @@
 @import url("../image/css/styles.css");
 @import url("../input/css/styles.css");
+@import url("../text/css/styles.css");
+@import url("../lists/css/styles.css");
 
 :root {
   --primary-color: #ff3b30;
