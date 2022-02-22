@@ -2,6 +2,7 @@
 @import url("../input/css/styles.css");
 @import url("../text/css/styles.css");
 @import url("../lists/css/styles.css");
+@import url("../rating/css/styles.css");
 
 :root {
   --primary-color: #ff3b30;
