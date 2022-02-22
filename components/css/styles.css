@@ -3,6 +3,7 @@
 @import url("../text/css/styles.css");
 @import url("../lists/css/styles.css");
 @import url("../rating/css/styles.css");
+@import url("../../css/styles.css");
 
 :root {
   --primary-color: #ff3b30;
@@ -10,13 +11,14 @@
   --action-color: #3b82f6;
   --gray-color: #9a9a9a;
   --black-color: #282828;
-  --white-color: #efefef;
+  --white-color: #ffffff;
   --lynx-white-color: #f7f7f7;
-  --violet-color: #534837;
+  --violet-color: #5348c7;
   --lynx-gray: #c5c5c5;
 
   --green-color: #596;
   --yellow-color: #ffff00;
+  --footer-color: #333;
 
   font-family: "Raleway", sans-serif;
 }
