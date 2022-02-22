@@ -1,4 +1,4 @@
 .rating {
-  color: gray;
+  color: var(--gray-color);
   font-size: 1.5rem;
 }

@@ -1,42 +1,41 @@
 let starLimit = 0;
-const stars = document.querySelectorAll("i");
+const stars = document.querySelectorAll(".rating i");
 stars.forEach((element, id) => {
-  element.addEventListener("click", (e) => {
-    e.preventDefault();
-    changeRating(id + 1);
+  element.addEventListener("click", () => {
+    changeRating(id);
   });
-  element.addEventListener("mouseover", (e) => {
-    e.preventDefault();
-    showChange(id + 1);
+  element.addEventListener("mouseover", () => {
+    showChange(id);
   });
-  element.addEventListener("mouseleave", (e) => {
-    e.preventDefault();
-    showOriginal(id + 1);
+  element.addEventListener("mouseleave", () => {
+    showOriginal(id);
   });
 });
 
 function changeRating(num) {
   let index = 0;
-  while (index < num) {
+  while (index <= num) {
     document.getElementsByTagName("i")[index++].style.color = "orange";
   }
-  index = num;
-  while (index < 5) {
-    document.getElementsByTagName("i")[index++].style.color = "gray";
+  index = num + 1;
+  while (index <= 4) {
+    document.getElementsByTagName("i")[index++].style.color =
+      "var(--gray-color)";
   }
-  starLimit = num;
+  starLimit = num + 1;
 }
 
 function showChange(num) {
   let index = 0;
-  while (index < num) {
+  while (index <= num) {
     document.getElementsByTagName("i")[index++].style.color = "orange";
   }
 }
 
 function showOriginal(num) {
   let index = starLimit;
-  while (index < num) {
-    document.getElementsByTagName("i")[index++].style.color = "gray";
+  while (index <= num) {
+    document.getElementsByTagName("i")[index++].style.color =
+      "var(--gray-color)";
   }
 }
