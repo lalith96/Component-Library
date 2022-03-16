@@ -4,6 +4,7 @@
 @import url("../lists/css/styles.css");
 @import url("../rating/css/styles.css");
 @import url("../../css/styles.css");
+@import url("../../docs/css/styles.css");
 
 :root {
   --primary-color: #ff3b30;
