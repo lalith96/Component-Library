@@ -9,18 +9,55 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link href="./components/css/styles.css" rel="stylesheet" />
+    <link href="../components/css/styles.css" rel="stylesheet" />
+    <script>
+      function load(componentName) {
+        document.getElementById(
+          "myframe"
+        ).src = `../components/${componentName}`;
+        const lielems = document.getElementsByTagName("li");
+        for (let i = 0; i < lielems.length; i++) lielems[i].className = "";
+        document.getElementById(componentName).className = "active";
+      }
+    </script>
   </head>
   <body>
-    <a href="./components/avatar/index.html">Avatar</a></br>
-    <a href="./components/alert/index.html">Alert</a></br>
-    <a href="./components/badge/index.html">Badge</a></br>
-    <a href="./components/button/index.html">Button</a></br>
-    <a href="./components/cards/index.html">Cards</a></br>
-    <a href="./components/image/index.html">Image</a></br>
-    <a href="./components/input/index.html">Input</a></br>
-    <a href="./components/lists/index.html">Lists</a></br>
-    <a href="./components/text/index.html">Text</a></br>
-    <a href="./components/rating/index.html">Ratings</a></br>
+    <header>
+      <div class="logo"><a href="/">Simple UI</a></div>
+      <div class="actions">
+        <a href="/"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="https://github.com/lalith96/Component-Library" target="_blank"
+          ><i class="fa-brands fa-github"></i>Github</a
+        >
+      </div>
+    </header>
+    <div class="docs-container">
+      <div class="docs-area">
+        <h1>Docs</h1>
+        <iframe
+          id="myframe"
+          src="../components/alert/index.html"
+          title="W3Schools Free Online Web Tutorials"
+          referrerpolicy="no-referrer"
+        ></iframe>
+      </div>
+      <div class="sidebar">
+        <ol>
+          <h3>Installation</h3>
+          <li>Getting started</li>
+          <h3>Components</h3>
+          <li id="alert" onclick="load('alert')">Alert</li>
+          <li id="avatar" onclick="load('avatar')">Avatar</li>
+          <li id="badge" onclick="load('badge')">Badge</li>
+          <li id="button" onclick="load('button')">Button</li>
+          <li id="cards" onclick="load('cards')">Cards</li>
+          <li id="image" onclick="load('image')">Image</li>
+          <li id="input" onclick="load('input')">Input</li>
+          <li id="lists" onclick="load('lists')">Lists</li>
+          <li id="text" onclick="load('text')">Text</li>
+          <li id="rating" onclick="load('rating')">Ratings</li>
+        </ol>
+      </div>
+    </div>
   </body>
 </html>
