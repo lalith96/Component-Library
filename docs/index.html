@@ -10,16 +10,18 @@
       rel="stylesheet"
     />
     <link href="../components/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/classic-light.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>
-      function load(componentName) {
-        document.getElementById(
-          "myframe"
-        ).src = `../components/${componentName}`;
-        const lielems = document.getElementsByTagName("li");
-        for (let i = 0; i < lielems.length; i++) lielems[i].className = "";
-        document.getElementById(componentName).className = "active";
-      }
+      hljs.initHighlightingOnLoad();
     </script>
+    <script
+      src="https://kit.fontawesome.com/9b2e1beb4b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -33,14 +35,724 @@
     </header>
     <div class="docs-container">
       <div class="docs-area">
-        <h1>Docs</h1>
-        <iframe
-          id="myframe"
-          src="../components/alert/index.html"
-          title="W3Schools Free Online Web Tutorials"
-          referrerpolicy="no-referrer"
-        ></iframe>
+        <!-- Documentation code for alerts -->
+        <h1 class="component-heading">Alerts</h1>
+        <h3 class="component-desc">
+          Alerts are short messages used to provide important information to the
+          users for his actions in the website.
+        </h3>
+        <h2 class="component-subheading">Basic alerts</h2>
+        <h4 class="component-subdesc">
+          Baisc alerts contains only text. In simple-ui we provide you with 6
+          different alerts and can be used by adding classes (.alert-success,
+          .alert-warning etc).
+        </h4>
+        <div class="component-preview">
+          <div class="alert alert-primary">
+            Alert with text message and primary color.
+          </div>
+          <div class="alert alert-secondary">
+            Alert with text message and secondary color.
+          </div>
+          <div class="alert alert-success">
+            Alert with success text message.
+          </div>
+          <div class="alert alert-warning">
+            Alert with warning text message.
+          </div>
+          <div class="alert alert-info">Alert with information.</div>
+          <div class="alert alert-dark">Alert with dark background.</div>
+        </div>
+        <pre>
+          <code class="language-html">
+            &lt;div class="alert alert-primary"&gt;
+                Alert with text message and primary color.
+            &lt;/div&gt;
+            &lt;div class="alert alert-secondary"&gt;
+                Alert with text message and secondary color.
+            &lt;/div&gt;
+            &lt;div class="alert alert-success"&gt;
+                Alert with success text message.
+            &lt;/div&gt;
+            &lt;div class="alert alert-warning"&gt;
+                Alert with warning text message.
+            &lt;/div&gt;
+            &lt;div class="alert alert-info"&gt;
+                Alert with information.
+            &lt;/div&gt;
+            &lt;div class="alert alert-dark"&gt;
+                Alert with dark background.
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- Alert with icon and text messages -->
+
+        <h2 class="component-subheading">Alerts with icon</h2>
+        <h4 class="component-subdesc">
+          These alerts contain icons along with text to make it more
+          interactive. Just add icon inside alert code. You can find code
+          snippet below which you can use directly by copying it.
+        </h4>
+        <div class="component-preview">
+          <div class="alert alert-info">
+            <i class="fa-solid fa-circle-info"></i>
+            Alert with information and icon.
+          </div>
+          <div class="alert alert-success">
+            <i class="fa-solid fa-circle-check"></i>
+            Alert with success text message and icon.
+          </div>
+          <div class="alert alert-primary">
+            <i class="fa-solid fa-circle-xmark"></i>
+            Alert with danger text message and icon.
+          </div>
+          <div class="alert alert-warning">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Alert with warning text message and icon.
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;div class="alert alert-info"&gt;
+                &lt;i class="fa-solid fa-circle-info"&gt;&lt;/i&gt;
+                Alert with information and icon.
+            &lt;/div&gt;
+            &lt;div class="alert alert-success"&gt;
+                &lt;i class="fa-solid fa-circle-check"&gt;&lt;/i&gt;
+                Alert with success text message and icon.
+            &lt;/div&gt;
+            &lt;div class="alert alert-primary"&gt;
+                &lt;i class="fa-solid fa-circle-xmark"&gt;&lt;/i&gt;
+                Alert with danger text message and icon.
+            &lt;/div&gt;
+            &lt;div class="alert alert-warning"&gt;
+                &lt;i class="fa-solid fa-triangle-exclamation"&gt;&lt;/i&gt;
+                Alert with warning text message and icon.
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- Documentation code for avatar -->
+
+        <h1 class="component-heading">Avatar</h1>
+        <h3 class="component-desc">
+          Avatars are used across website to display profile pictures in
+          different places like profile, chat and posts.
+        </h3>
+        <h2 class="component-subheading">Avatar with image</h2>
+        <h4 class="component-subdesc">
+          Avatar with image can be used by adding avatar-img class to image tag
+          and we provide you with 4 different sizes for different pages.
+        </h4>
+        <!-- Image avatar with different sizes lg:large md:medium sm:small xs:extra small -->
+        <div class="component-preview">
+          <img src="../../images/profile.jpeg" class="avatar-img avatar-lg" />
+          <img src="../../images/profile.jpeg" class="avatar-img avatar-md" />
+          <img src="../../images/profile.jpeg" class="avatar-img avatar-sm" />
+          <img src="../../images/profile.jpeg" class="avatar-img avatar-xs" />
+        </div>
+        <pre>
+          <code class="language-html">
+            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-lg" /&gt;
+            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-md" /&gt;
+            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-sm" /&gt;
+            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-xs" /&gt;
+          </code>
+        </pre>
+
+        <!-- Text avatar with different sizes lg:large md:medium sm:small xs:extra small -->
+
+        <h2 class="component-subheading">Avatar with text</h2>
+        <h4 class="component-subdesc">
+          Avatar with text can be used in absense of image to display user
+          initial etc. Add class avatar-text to div containing text to make
+          avatar with text.
+        </h4>
+        <div class="component-preview">
+          <div class="avatar-text avatar-lg bg-green">LK</div>
+          <div class="avatar-text avatar-md bg-primary">LK</div>
+          <div class="avatar-text avatar-sm bg-gray">LK</div>
+          <div class="avatar-text avatar-xs bg-primary">LK</div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;div class="avatar-text avatar-lg bg-green"&gt;LK&lt;/div&gt;
+            &lt;div class="avatar-text avatar-md bg-primary"&gt;LK&lt;/div&gt;
+            &lt;div class="avatar-text avatar-sm bg-gray"&gt;LK&lt;/div&gt;
+            &lt;div class="avatar-text avatar-xs bg-primary"&gt;LK&lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- Documentation code for Badge  -->
+
+        <h1 class="component-heading">Badge</h1>
+        <h3 class="component-desc">
+          Badges are used to display info relative to parent components.
+          Information like notification count and status are provided.
+        </h3>
+        <h2 class="component-subheading">Badge on avatar</h2>
+        <h4 class="component-subdesc">
+          Badge on avatar can be added by wrapping avatar inside div with class
+          name badge.
+        </h4>
+
+        <!-- Badge on different avatar sizes -->
+
+        <div class="component-preview">
+          <div class="badge">
+            <img src="../../images/profile.jpeg" class="avatar-img avatar-lg" />
+            <span class="badge-on-avatar bg-green"></span>
+          </div>
+          <div class="badge">
+            <img src="../../images/profile.jpeg" class="avatar-img avatar-md" />
+            <span class="badge-on-avatar bg-primary"></span>
+          </div>
+          <div class="badge">
+            <img src="../../images/profile.jpeg" class="avatar-img avatar-sm" />
+            <span class="badge-on-avatar bg-gray"></span>
+          </div>
+          <div class="badge">
+            <img src="../../images/profile.jpeg" class="avatar-img avatar-xs" />
+            <span class="badge-on-avatar bg-green"></span>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;div class="badge"&gt;
+              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-lg" /&gt;
+              &lt;span class="badge-on-avatar bg-green"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-md" /&gt;
+              &lt;span class="badge-on-avatar bg-primary"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-sm" /&gt;
+              &lt;span class="badge-on-avatar bg-gray"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-xs" /&gt;
+              &lt;span class="badge-on-avatar bg-green"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- Badge on icons with number -->
+        <h2 class="component-subheading">Badge on icons</h2>
+        <h4 class="component-subdesc">
+          Badge on icons can be added by wrapping icons inside div with class
+          name badge.
+        </h4>
+        <div class="component-preview">
+          <div class="badge">
+            <i class="fas fa-envelope"></i>
+            <span class="badge-on-icon badge-number bg-primary">4</span>
+          </div>
+          <div class="badge">
+            <i class="fas fa-comment"></i>
+            <span class="badge-on-icon badge-number bg-green">4</span>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;div class="badge"&gt;
+              &lt;i class="fas fa-envelope"&gt;&lt;/i&gt;
+              &lt;span class="badge-on-icon badge-number bg-primary"&gt;4&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="badge"&gt;
+              &lt;i class="fas fa-comment"&gt;&lt;/i&gt;
+              &lt;span class="badge-on-icon badge-number bg-green"&gt;4&lt;/span&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- Documentation code for Button -->
+
+        <h1 class="component-heading">Buttons</h1>
+        <h3 class="component-desc">
+          Buttons are used to perform actions in websites and it can be seen
+          across website on almost all pages.
+        </h3>
+        <h2 class="component-subheading">Buttons with different variations</h2>
+        <h4 class="component-subdesc">Button Subdescription</h4>
+
+        <!-- Buttons with different variations-->
+
+        <div class="component-preview">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-warning">Warning</button>
+          <button class="btn btn-info">Info</button>
+          <button class="btn btn-dark">Dark</button>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+            &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+            &lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+            &lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+            &lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;
+          </code>
+        </pre>
+
+        <!-- Buttons with icons-->
+        <h2 class="component-subheading">Buttons with icons</h2>
+        <h4 class="component-subdesc">Button Subdescription</h4>
+        <div class="component-preview">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-circle-xmark"></i>
+            Wrong
+          </button>
+          <button class="btn btn-success">
+            <i class="fa-solid fa-circle-check"></i>
+            Success
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Warning
+          </button>
+          <button class="btn btn-info">
+            <i class="fa-solid fa-circle-info"></i>
+            Info
+          </button>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;button class="btn btn-primary"&gt;
+                &lt;i class="fa-solid fa-circle-xmark"&gt;&lt;/i&gt;
+                Wrong
+            &lt;/button&gt;
+            &lt;button class="btn btn-success"&gt;
+                &lt;i class="fa-solid fa-circle-check"&gt;&lt;/i&gt;
+                Success
+            &lt;/button&gt;
+            &lt;button class="btn btn-warning"&gt;
+                &lt;i class="fa-solid fa-triangle-exclamation"&gt;&lt;/i&gt;
+                Warning
+            &lt;/button&gt;
+            &lt;button class="btn btn-info"&gt;
+                &lt;i class="fa-solid fa-circle-info"&gt;&lt;/i&gt;
+                Info
+            &lt;/button&gt;
+          </code>
+        </pre>
+
+        <!-- Buttons with links -->
+        <h2 class="component-subheading">Buttons with links</h2>
+        <h4 class="component-subdesc">Button Subdescription</h4>
+        <div class="component-preview">
+          <button class="btn-link btn-link-primary">Link</button>
+          <button class="btn-link btn-link-success">Success</button>
+          <button class="btn-link btn-link-info">Info</button>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;button class="btn-link btn-link-primary"&gt;Link&lt;/button&gt;
+            &lt;button class="btn-link btn-link-success"&gt;Success&lt;/button&gt;
+            &lt;button class="btn-link btn-link-info"&gt;Info&lt;/button&gt;
+          </code>
+        </pre>
+
+        <!-- Floating action button -->
+        <h2 class="component-subheading">Floating action button</h2>
+        <h4 class="component-subdesc">Button Subdescription</h4>
+        <div class="component-preview">
+          <button class="btn btn-floating btn-primary">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;button class="btn btn-floating btn-primary"&gt;
+              &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          </code>
+        </pre>
+
+        <!-- Documentation code for cards -->
+
+        <h1 class="component-heading">Card</h1>
+        <h3 class="component-desc">Card description.</h3>
+        <h2 class="component-subheading">Cards with different variations</h2>
+        <h4 class="component-subdesc">Card subdescription</h4>
+
+        <!-- Code to change different cards using select -->
+        <div class="component-preview">
+          <div class="select-area">
+            <select onchange="changeCard(event.target.value)">
+              <option value="1">Card with badge</option>
+              <option value="2">Card with dismiss</option>
+              <option value="3">Card with text overlay</option>
+              <option value="4">Text only card</option>
+              <option value="5">Horizontal card</option>
+              <option value="6">Card with shadow</option>
+            </select>
+          </div>
+
+          <!-- Same HTML code for all cards -->
+          <div class="card-area">
+            <div class="card card-badge">
+              <div class="c-badge">New</div>
+              <div class="c-dismiss">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </div>
+              <div class="card-img">
+                <img src="../../images/iPhone.jpeg" />
+              </div>
+              <div class="content">
+                <div class="about">
+                  <div class="card-title">
+                    <h3 id="title">Card with Badge</h3>
+                  </div>
+                  <div class="card-description">
+                    <p id="description">
+                      Card with badge, image and vertical aligned content.
+                    </p>
+                  </div>
+                </div>
+                <div class="action-buttons">
+                  <button class="btn btn-primary">Read More</button>
+                  <button class="btn btn-info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;div class="card-area"&gt;
+                &lt;div class="card card-badge"&gt;
+                    &lt;div class="c-badge"&gt;New&lt;/div&gt;
+                    &lt;div class="c-dismiss"&gt;
+                        &lt;i class="fa-solid fa-circle-xmark"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card-img"&gt;
+                        &lt;img src="../../images/iPhone.jpeg" /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="content"&gt;
+                        &lt;div class="about"&gt;
+                            &lt;div class="card-title"&gt;
+                                &lt;h3 id="title"&gt;Card with Badge&lt;/h3&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-description"&gt;
+                                &lt;p id="description"&gt;
+                                    Card with badge, image and vertical aligned content.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="action-buttons"&gt;
+                            &lt;button class="btn btn-primary"&gt;Read More&lt;/button&gt;
+                            &lt;button class="btn btn-info"&gt;
+                              &lt;i class="fa-solid fa-circle-info"&gt;&lt;/i&gt;
+                              Info
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- Documentation code for Image  -->
+
+        <h1 class="component-heading">Image</h1>
+        <h3 class="component-desc">Image description.</h3>
+        <h2 class="component-subheading">Responsive Image</h2>
+        <h4 class="component-subdesc">Image subdescription</h4>
+
+        <!-- Responsive Image-->
+
+        <div class="component-preview">
+          <img src="../../images/image.jpeg" class="image-responsive" />
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;img src="../../images/image.jpeg" class="image-responsive" /&gt;
+          </code>
+        </pre>
+
+        <!-- Round Image -->
+        <h2 class="component-subheading">Round Image</h2>
+        <h4 class="component-subdesc">Round Image subdescription</h4>
+
+        <div class="component-preview">
+          <img
+            src="../../images/profile.jpeg"
+            class="image-responsive round-image"
+          />
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;img src="../../images/profile.jpeg" class="image-responsive round-image" /&gt;
+          </code>
+        </pre>
+        <!-- Documentation code for Input -->
+
+        <h1 class="component-heading">Input</h1>
+        <h3 class="component-desc">Input description.</h3>
+        <h2 class="component-subheading">Input with different variations</h2>
+        <h4 class="component-subdesc">Input subdescription</h4>
+
+        <!-- Simple input box -->
+
+        <div class="component-preview">
+          <div class="input-container">
+            <label>Input-Label</label>
+            <input type="text" placeholder="Enter text" />
+          </div>
+
+          <!-- Success input box -->
+
+          <div class="input-container success-msg">
+            <label>Input-Label</label>
+            <input type="text" placeholder="Enter text" />
+            <span>Success message</span>
+          </div>
+
+          <!--Error input box -->
+
+          <div class="input-container error-msg">
+            <label>Input-Label</label>
+            <input type="text" placeholder="Enter text" />
+            <span>Error message</span>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+              &lt;div class="input-container"&gt;
+                  &lt;label&gt;Input-Label&lt;/label&gt;
+                  &lt;input type="text" placeholder="Enter text" /&gt;
+              &lt;/div&gt;
+              &lt;div class="input-container success-msg"&gt;
+                  &lt;label&gt;Input-Label&lt;/label&gt;
+                  &lt;input type="text" placeholder="Enter text" /&gt;
+                  &lt;span&gt;Success message&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="input-container error-msg"&gt;
+                  &lt;label&gt;Input-Label&lt;/label&gt;
+                  &lt;input type="text" placeholder="Enter text" /&gt;
+                  &lt;span&gt;Error message&lt;/span&gt;
+              &lt;/div&gt;
+          </code>
+        </pre>
+
+        <!-- Documentation for Lists -->
+
+        <!-- Normal lists-->
+
+        <h1 class="component-heading">Lists</h1>
+        <h3 class="component-desc">List description.</h3>
+        <h2 class="component-subheading">Normal lists</h2>
+        <h4 class="component-subdesc">Lists subdescription</h4>
+
+        <div class="component-preview">
+          <ul class="list list-circle">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+          </ul>
+
+          <ul class="list list-square">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+          </ul>
+
+          <ol class="list">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+          </ol>
+
+          <ol class="list list-alpha">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+          </ol>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;ul class="list list-circle"&gt;
+              &lt;li&gt;One&lt;/li&gt;
+              &lt;li&gt;Two&lt;/li&gt;
+              &lt;li&gt;Three&lt;/li&gt;
+              &lt;li&gt;Four&lt;/li&gt;
+              &lt;li&gt;Five&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;ul class="list list-square"&gt;
+              &lt;li&gt;One&lt;/li&gt;
+              &lt;li&gt;Two&lt;/li&gt;
+              &lt;li&gt;Three&lt;/li&gt;
+              &lt;li&gt;Four&lt;/li&gt;
+              &lt;li&gt;Five&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;ol class="list"&gt;
+              &lt;li&gt;One&lt;/li&gt;
+              &lt;li&gt;Two&lt;/li&gt;
+              &lt;li&gt;Three&lt;/li&gt;
+              &lt;li&gt;Four&lt;/li&gt;
+              &lt;li&gt;Five&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;ol class="list list-alpha"&gt;
+              &lt;li&gt;One&lt;/li&gt;
+              &lt;li&gt;Two&lt;/li&gt;
+              &lt;li&gt;Three&lt;/li&gt;
+              &lt;li&gt;Four&lt;/li&gt;
+              &lt;li&gt;Five&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
+
+        <!-- Stacked list -->
+        <h2 class="component-subheading">Stacked Lists</h2>
+        <h4 class="component-subdesc">Lists subdescription</h4>
+        <div class="component-preview">
+          <ul class="list stacked">
+            <li class="list-header">Notifications (5)</li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+          </ul>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;ul class="list stacked"&gt;
+              &lt;li class="list-header"&gt;Notifications (5)&lt;/li&gt;
+              &lt;li&gt;One&lt;/li&gt;
+              &lt;li&gt;Two&lt;/li&gt;
+              &lt;li&gt;Three&lt;/li&gt;
+              &lt;li&gt;Four&lt;/li&gt;
+              &lt;li&gt;Five&lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+        </pre>
+
+        <!-- Documentation for Rating -->
+
+        <!-- Normal lists-->
+
+        <h1 class="component-heading">Rating</h1>
+        <h3 class="component-desc">Rating description.</h3>
+        <h2 class="component-subheading">Rating</h2>
+        <h4 class="component-subdesc">Rating subdescription</h4>
+
+        <div class="component-preview">
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;div class="rating"&gt;
+              &lt;i class="fa-solid fa-star"&gt;&lt;/i&gt;
+              &lt;i class="fa-solid fa-star"&gt;&lt;/i&gt;
+              &lt;i class="fa-solid fa-star"&gt;&lt;/i&gt;
+              &lt;i class="fa-solid fa-star"&gt;&lt;/i&gt;
+              &lt;i class="fa-solid fa-star"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+        <!-- Documentation for Lists -->
+
+        <!-- Normal lists-->
+
+        <h1 class="component-heading">Text</h1>
+        <h3 class="component-desc">Text description.</h3>
+        <h2 class="component-subheading">Text</h2>
+        <h4 class="component-subdesc">Text subdescription</h4>
+
+        <!-- HTML for headers -->
+        <div class="component-preview">
+          <h1>Header Text - h1</h1>
+          <h2>Header Text - h2</h2>
+          <h3>Header Text - h3</h3>
+          <h4>Header Text - h4</h4>
+          <h5>Header Text - h5</h5>
+          <br />
+
+          <!-- HTML for text of various sizes. -->
+
+          <p class="xl-text">Lorem ipsum</p>
+          <p class="l-text">Lorem ipsum</p>
+          <p class="md-text">Lorem ipsum</p>
+          <br />
+
+          <!-- Small text -->
+
+          <p class="sm-text">Lorem ipsum</p>
+          <p class="xs-text">Lorem ipsum</p>
+          <br />
+
+          <!-- Gray text -->
+
+          <p class="l-text gray-text">Lorem ipsum</p>
+          <br />
+
+          <!-- center text -->
+
+          <p class="l-text center-text">Lorem ipsum</p>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;h1&gt;Header Text - h1&lt;/h1&gt;
+            &lt;h2&gt;Header Text - h2&lt;/h2&gt;
+            &lt;h3&gt;Header Text - h3&lt;/h3&gt;
+            &lt;h4&gt;Header Text - h4&lt;/h4&gt;
+            &lt;h5&gt;Header Text - h5&lt;/h5&gt;
+  
+            &lt;p class="xl-text"&gt;Lorem ipsum&lt;/p&gt;
+            &lt;p class="l-text"&gt;Lorem ipsum&lt;/p&gt;
+            &lt;p class="md-text"&gt;Lorem ipsum&lt;/p&gt;
+  
+            &lt;p class="sm-text"&gt;Lorem ipsum&lt;/p&gt;
+            &lt;p class="xs-text"&gt;Lorem ipsum&lt;/p&gt;
+  
+            &lt;p class="l-text gray-text"&gt;Lorem ipsum&lt;/p&gt;
+  
+            &lt;p class="l-text center-text"&gt;Lorem ipsum&lt;/p&gt;
+          </code>
+        </pre>
       </div>
+
       <div class="sidebar">
         <ol>
           <h3>Installation</h3>
