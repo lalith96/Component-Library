@@ -1,0 +1,134 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  height: 7%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 4%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.actions {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.actions a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.actions a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.actions i {
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  height: 83%;
+  background-color: white;
+}
+
+.main-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.main-text {
+  width: 50%;
+}
+
+.main-text button {
+  margin-top: 20px;
+}
+
+.main-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--footer-color);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer a i {
+  margin: 10px 5px;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .main-right {
+    width: 100%;
+    height: 45%;
+    order: 1;
+  }
+
+  .main-left {
+    width: 100%;
+    height: 45%;
+    order: 2;
+  }
+
+  .main-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-text h2 {
+    padding: 0px 50px;
+  }
+
+  .main-text button {
+    width: 50%;
+  }
+}
