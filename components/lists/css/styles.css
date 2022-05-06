@@ -18,19 +18,9 @@
   text-align: center;
 }
 
-.stacked {
+.spaced-list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  box-shadow: 0px 0px 8px 6px var(--lynx-gray);
-}
-
-.stacked li {
-  padding: 8px 16px;
-  border-bottom: 1px solid var(--gray-color);
-  background-color: var(--lynx-white-color);
-}
-
-.stacked li:last-child {
-  border-bottom: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
 }

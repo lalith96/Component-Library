@@ -96,12 +96,17 @@ p {
   font-size: 3em;
 }
 
+.icon-area {
+  width: 1em;
+  height: 1em;
+}
+
 .badge-on-avatar {
   width: 13%;
   height: 13%;
   position: absolute;
-  top: 70%;
-  right: 0px;
+  top: 75%;
+  left: 81%;
   border: 2px solid var(--white-color);
   border-radius: 50%;
 }
@@ -134,6 +139,7 @@ p {
   padding: 0 1rem;
   color: var(--white-color);
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .alert i {
@@ -226,7 +232,8 @@ p {
 }
 
 .btn-floating {
-  padding: 1rem;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   box-shadow: 0 3px 10px var(--black-color);
 }
@@ -306,9 +313,13 @@ p {
   margin: 10px 0px;
 }
 
+.card-overlay .content {
+  position: relative;
+}
+
 .card-overlay .about {
   position: absolute;
-  top: 50%;
+  bottom: 125%;
   color: white;
   z-index: 1;
 }
@@ -316,11 +327,17 @@ p {
 .card-horizontal {
   display: flex;
   flex-direction: row;
-  width: 600px;
+  width: 550px;
   border-radius: 8px;
 }
 
+.card-horizontal .card-img {
+  width: 80%;
+  height: 250px;
+}
+
 .card-horizontal img {
+  height: 100%;
   border-radius: 8px 0px 0px 8px;
 }
 

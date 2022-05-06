@@ -131,3 +131,57 @@ code {
   line-height: 20px;
   font-weight: 600;
 }
+
+.class-name {
+  color: var(--primary-color);
+}
+
+.avatar-preview {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-preview div {
+  margin-right: 20px;
+}
+
+.badge-preview div {
+  margin-right: 20px;
+}
+
+.card-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 500px;
+}
+
+.card-preview .select-area {
+  width: 30%;
+}
+
+.card-preview .card-area {
+  width: 70%;
+}
+
+.image-preview {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+}
+
+.image-preview-round {
+  width: 40%;
+  min-height: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.spaced-list-preview {
+  width: 50%;
+  min-width: 180px;
+  height: auto;
+  padding: 10px;
+  background-color: var(--secondary-color);
+}

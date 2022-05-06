@@ -22,6 +22,8 @@
       src="https://kit.fontawesome.com/9b2e1beb4b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/components/cards/script.js"></script>
+    <script src="/components/rating/javascript/script.js"></script>
   </head>
   <body>
     <header>
@@ -36,16 +38,19 @@
     <div class="docs-container">
       <div class="docs-area">
         <!-- Documentation code for alerts -->
+        <h1 class="component-heading">Getting Started</h1>
         <h1 class="component-heading">Alerts</h1>
         <h3 class="component-desc">
           Alerts are short messages used to provide important information to the
-          users for his actions in the website.
+          users for their actions on the website.
         </h3>
         <h2 class="component-subheading">Basic alerts</h2>
         <h4 class="component-subdesc">
-          Baisc alerts contains only text. In simple-ui we provide you with 6
-          different alerts and can be used by adding classes (.alert-success,
-          .alert-warning etc).
+          Basic alerts contain only text. In Simple-UI we provide you with 6
+          different alerts and can be used by adding classes
+          <span class="class-name">.alert</span>,
+          <span class="class-name">.alert-success</span>,
+          <span class="class-name">.alert-warning</span> etc.
         </h4>
         <div class="component-preview">
           <div class="alert alert-primary">
@@ -90,9 +95,10 @@
 
         <h2 class="component-subheading">Alerts with icon</h2>
         <h4 class="component-subdesc">
-          These alerts contain icons along with text to make it more
-          interactive. Just add icon inside alert code. You can find code
-          snippet below which you can use directly by copying it.
+          These alerts contain icons with text to make users understand the
+          purpose of the alert just by looking into the icon. Just add an icon
+          inside the alert code. You can find code the snippet below, which you
+          can use directly by copying it.
         </h4>
         <div class="component-preview">
           <div class="alert alert-info">
@@ -138,27 +144,28 @@
 
         <h1 class="component-heading">Avatar</h1>
         <h3 class="component-desc">
-          Avatars are used across website to display profile pictures in
-          different places like profile, chat and posts.
+          Avatars are used across websites to display profile pictures in
+          different places like profiles, chats and posts.
         </h3>
         <h2 class="component-subheading">Avatar with image</h2>
         <h4 class="component-subdesc">
-          Avatar with image can be used by adding avatar-img class to image tag
-          and we provide you with 4 different sizes for different pages.
+          Avatar with an image can be used by adding
+          <span class="class-name">.avatar-img</span> to the image tag and
+          Simple-UI provides 4 different sizes for different pages.
         </h4>
         <!-- Image avatar with different sizes lg:large md:medium sm:small xs:extra small -->
         <div class="component-preview">
-          <img src="../../images/profile.jpeg" class="avatar-img avatar-lg" />
-          <img src="../../images/profile.jpeg" class="avatar-img avatar-md" />
-          <img src="../../images/profile.jpeg" class="avatar-img avatar-sm" />
-          <img src="../../images/profile.jpeg" class="avatar-img avatar-xs" />
+          <img src="/images/profile.jpeg" class="avatar-img avatar-lg" />
+          <img src="/images/profile.jpeg" class="avatar-img avatar-md" />
+          <img src="/images/profile.jpeg" class="avatar-img avatar-sm" />
+          <img src="/images/profile.jpeg" class="avatar-img avatar-xs" />
         </div>
         <pre>
           <code class="language-html">
-            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-lg" /&gt;
-            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-md" /&gt;
-            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-sm" /&gt;
-            &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-xs" /&gt;
+            &lt;img src="/images/profile.jpeg" class="avatar-img avatar-lg" /&gt;
+            &lt;img src="/images/profile.jpeg" class="avatar-img avatar-md" /&gt;
+            &lt;img src="/images/profile.jpeg" class="avatar-img avatar-sm" /&gt;
+            &lt;img src="/images/profile.jpeg" class="avatar-img avatar-xs" /&gt;
           </code>
         </pre>
 
@@ -166,15 +173,17 @@
 
         <h2 class="component-subheading">Avatar with text</h2>
         <h4 class="component-subdesc">
-          Avatar with text can be used in absense of image to display user
-          initial etc. Add class avatar-text to div containing text to make
-          avatar with text.
+          Avatar with text can be used in the absence of the image to display
+          user initials etc. Add <span class="class-name">.avatar-text</span> to
+          div containing text to make an avatar with text.
         </h4>
         <div class="component-preview">
-          <div class="avatar-text avatar-lg bg-green">LK</div>
-          <div class="avatar-text avatar-md bg-primary">LK</div>
-          <div class="avatar-text avatar-sm bg-gray">LK</div>
-          <div class="avatar-text avatar-xs bg-primary">LK</div>
+          <div class="avatar-preview">
+            <div class="avatar-text avatar-lg bg-green">LK</div>
+            <div class="avatar-text avatar-md bg-primary">LK</div>
+            <div class="avatar-text avatar-sm bg-gray">LK</div>
+            <div class="avatar-text avatar-xs bg-primary">LK</div>
+          </div>
         </div>
 
         <pre>
@@ -190,83 +199,89 @@
 
         <h1 class="component-heading">Badge</h1>
         <h3 class="component-desc">
-          Badges are used to display info relative to parent components.
-          Information like notification count and status are provided.
+          Badges are used to display info related to parent components. They
+          provide information like notification count and status.
         </h3>
         <h2 class="component-subheading">Badge on avatar</h2>
         <h4 class="component-subdesc">
-          Badge on avatar can be added by wrapping avatar inside div with class
-          name badge.
+          A badge on the avatar is displayed by wrapping the avatar inside div
+          with <span class="class-name">.badge</span> class added to it. Add
+          class with width and height same as avatar.
         </h4>
 
         <!-- Badge on different avatar sizes -->
 
         <div class="component-preview">
-          <div class="badge">
-            <img src="../../images/profile.jpeg" class="avatar-img avatar-lg" />
+          <div class="badge avatar-lg">
+            <img src="/images/profile.jpeg" class="avatar-img avatar-lg" />
             <span class="badge-on-avatar bg-green"></span>
           </div>
-          <div class="badge">
-            <img src="../../images/profile.jpeg" class="avatar-img avatar-md" />
+          <div class="badge avatar-md">
+            <img src="/images/profile.jpeg" class="avatar-img avatar-md" />
             <span class="badge-on-avatar bg-primary"></span>
           </div>
-          <div class="badge">
-            <img src="../../images/profile.jpeg" class="avatar-img avatar-sm" />
+          <div class="badge avatar-sm">
+            <img src="/images/profile.jpeg" class="avatar-img avatar-sm" />
             <span class="badge-on-avatar bg-gray"></span>
           </div>
-          <div class="badge">
-            <img src="../../images/profile.jpeg" class="avatar-img avatar-xs" />
+          <div class="badge avatar-xs">
+            <img src="/images/profile.jpeg" class="avatar-img avatar-xs" />
             <span class="badge-on-avatar bg-green"></span>
           </div>
         </div>
 
         <pre>
           <code class="language-html">
-            &lt;div class="badge"&gt;
-              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-lg" /&gt;
+            &lt;div class="badge avatar-lg"&gt;
+              &lt;img src="/images/profile.jpeg" class="avatar-img avatar-lg" /&gt;
               &lt;span class="badge-on-avatar bg-green"&gt;&lt;/span&gt;
             &lt;/div&gt;
-            &lt;div class="badge"&gt;
-              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-md" /&gt;
+            &lt;div class="badge avatar-md"&gt;
+              &lt;img src="/images/profile.jpeg" class="avatar-img avatar-md" /&gt;
               &lt;span class="badge-on-avatar bg-primary"&gt;&lt;/span&gt;
             &lt;/div&gt;
-            &lt;div class="badge"&gt;
-              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-sm" /&gt;
+            &lt;div class="badge avatar-sm"&gt;
+              &lt;img src="/images/profile.jpeg" class="avatar-img avatar-sm" /&gt;
               &lt;span class="badge-on-avatar bg-gray"&gt;&lt;/span&gt;
             &lt;/div&gt;
-            &lt;div class="badge"&gt;
-              &lt;img src="../../images/profile.jpeg" class="avatar-img avatar-xs" /&gt;
+            &lt;div class="badge avatar-xs"&gt;
+              &lt;img src="/images/profile.jpeg" class="avatar-img avatar-xs" /&gt;
               &lt;span class="badge-on-avatar bg-green"&gt;&lt;/span&gt;
             &lt;/div&gt;
           </code>
         </pre>
 
         <!-- Badge on icons with number -->
+
         <h2 class="component-subheading">Badge on icons</h2>
         <h4 class="component-subdesc">
           Badge on icons can be added by wrapping icons inside div with class
-          name badge.
+          name badge. Add <span class="class-name">.badge</span> and
+          <span class="class-name">.icon-area</span> to div which contains icon
+          and badge.
         </h4>
         <div class="component-preview">
-          <div class="badge">
-            <i class="fas fa-envelope"></i>
-            <span class="badge-on-icon badge-number bg-primary">4</span>
-          </div>
-          <div class="badge">
-            <i class="fas fa-comment"></i>
-            <span class="badge-on-icon badge-number bg-green">4</span>
+          <div class="badge-preview">
+            <div class="badge icon-area">
+              <i class="fas fa-envelope"></i>
+              <span class="badge-on-icon badge-number bg-primary">2</span>
+            </div>
+            <div class="badge icon-area">
+              <i class="fas fa-comment"></i>
+              <span class="badge-on-icon badge-number bg-green">2</span>
+            </div>
           </div>
         </div>
 
         <pre>
           <code class="language-html">
-            &lt;div class="badge"&gt;
+            &lt;div class="badge icon-area"&gt;
               &lt;i class="fas fa-envelope"&gt;&lt;/i&gt;
-              &lt;span class="badge-on-icon badge-number bg-primary"&gt;4&lt;/span&gt;
+              &lt;span class="badge-on-icon badge-number bg-primary"&gt;2&lt;/span&gt;
             &lt;/div&gt;
-            &lt;div class="badge"&gt;
+            &lt;div class="badge icon-area"&gt;
               &lt;i class="fas fa-comment"&gt;&lt;/i&gt;
-              &lt;span class="badge-on-icon badge-number bg-green"&gt;4&lt;/span&gt;
+              &lt;span class="badge-on-icon badge-number bg-green"&gt;2&lt;/span&gt;
             &lt;/div&gt;
           </code>
         </pre>
@@ -275,11 +290,18 @@
 
         <h1 class="component-heading">Buttons</h1>
         <h3 class="component-desc">
-          Buttons are used to perform actions in websites and it can be seen
-          across website on almost all pages.
+          Buttons are used to perform actions in websites, and they are seen
+          across the website on almost all pages.
         </h3>
         <h2 class="component-subheading">Buttons with different variations</h2>
-        <h4 class="component-subdesc">Button Subdescription</h4>
+        <h4 class="component-subdesc">
+          Simple UI provides 6 different variations of buttons. Some buttons
+          used for specific purpose while other can be used anywhere. Add
+          <span class="class-name"></span>.btn and
+          <span class="class-name">btn-primary</span>,
+          <span class="class-name">btn-success</span> etc for different styles
+          in your code.
+        </h4>
 
         <!-- Buttons with different variations-->
 
@@ -305,7 +327,10 @@
 
         <!-- Buttons with icons-->
         <h2 class="component-subheading">Buttons with icons</h2>
-        <h4 class="component-subdesc">Button Subdescription</h4>
+        <h4 class="component-subdesc">
+          These icons make buttons easily understood by anyone. Just add icon
+          inside button tag.
+        </h4>
         <div class="component-preview">
           <button class="btn btn-primary">
             <i class="fa-solid fa-circle-xmark"></i>
@@ -348,7 +373,12 @@
 
         <!-- Buttons with links -->
         <h2 class="component-subheading">Buttons with links</h2>
-        <h4 class="component-subdesc">Button Subdescription</h4>
+        <h4 class="component-subdesc">
+          These button with links can be used as mostly secondary action buttons
+          or in place of links. Add
+          <span class="class-name">.btn-link</span> class to the button tag in
+          your code.
+        </h4>
         <div class="component-preview">
           <button class="btn-link btn-link-primary">Link</button>
           <button class="btn-link btn-link-success">Success</button>
@@ -365,7 +395,12 @@
 
         <!-- Floating action button -->
         <h2 class="component-subheading">Floating action button</h2>
-        <h4 class="component-subdesc">Button Subdescription</h4>
+        <h4 class="component-subdesc">
+          Floating action button is used for important actions in website like
+          move to top, opening camera etc. For button tag add
+          <span class="class-name">.btn-floating</span> class and add icon of
+          your choice inside it based on requirement.
+        </h4>
         <div class="component-preview">
           <button class="btn btn-floating btn-primary">
             <i class="fa-solid fa-plus"></i>
@@ -383,50 +418,66 @@
         <!-- Documentation code for cards -->
 
         <h1 class="component-heading">Card</h1>
-        <h3 class="component-desc">Card description.</h3>
+        <h3 class="component-desc">
+          Cards contain combination of image, text and buttons to provide user
+          with more information.
+        </h3>
         <h2 class="component-subheading">Cards with different variations</h2>
-        <h4 class="component-subdesc">Card subdescription</h4>
+        <h4 class="component-subdesc">
+          Simple UI provides a 6 different cards. 1) Card with badge. 2) Card
+          with dismiss. 3) Card with text overlay. 4) Text only card. 5)
+          Horizontal card. 6) Card with shadow. And you can use class names
+          respectively <span class="class-name">.card-badge</span>,
+          <span class="class-name">.card-dismiss</span>,
+          <span class="class-name">.card-shadow</span>,
+          <span class="class-name">.card-overlay</span>,
+          <span class="class-name">.text-card</span>,
+          <span class="class-name">.card-horizontal</span>. Use select box below
+          to see all cards.
+        </h4>
 
         <!-- Code to change different cards using select -->
         <div class="component-preview">
-          <div class="select-area">
-            <select onchange="changeCard(event.target.value)">
-              <option value="1">Card with badge</option>
-              <option value="2">Card with dismiss</option>
-              <option value="3">Card with text overlay</option>
-              <option value="4">Text only card</option>
-              <option value="5">Horizontal card</option>
-              <option value="6">Card with shadow</option>
-            </select>
-          </div>
+          <div class="card-preview">
+            <div class="select-area">
+              <select onchange="changeCard(event.target.value)">
+                <option value="1">Card with badge</option>
+                <option value="2">Card with dismiss</option>
+                <option value="3">Card with text overlay</option>
+                <option value="4">Text only card</option>
+                <option value="5">Horizontal card</option>
+                <option value="6">Card with shadow</option>
+              </select>
+            </div>
 
-          <!-- Same HTML code for all cards -->
-          <div class="card-area">
-            <div class="card card-badge">
-              <div class="c-badge">New</div>
-              <div class="c-dismiss">
-                <i class="fa-solid fa-circle-xmark"></i>
-              </div>
-              <div class="card-img">
-                <img src="../../images/iPhone.jpeg" />
-              </div>
-              <div class="content">
-                <div class="about">
-                  <div class="card-title">
-                    <h3 id="title">Card with Badge</h3>
-                  </div>
-                  <div class="card-description">
-                    <p id="description">
-                      Card with badge, image and vertical aligned content.
-                    </p>
-                  </div>
+            <!-- Same HTML code for all cards -->
+            <div class="card-area">
+              <div class="card card-badge">
+                <div class="c-badge">New</div>
+                <div class="c-dismiss">
+                  <i class="fa-solid fa-circle-xmark"></i>
                 </div>
-                <div class="action-buttons">
-                  <button class="btn btn-primary">Read More</button>
-                  <button class="btn btn-info">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Info
-                  </button>
+                <div class="card-img">
+                  <img src="../../images/iPhone.jpeg" />
+                </div>
+                <div class="content">
+                  <div class="about">
+                    <div class="card-title">
+                      <h3 id="title">Card with Badge</h3>
+                    </div>
+                    <div class="card-description">
+                      <p id="description">
+                        Card with badge, image and vertical aligned content.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="btn btn-primary">Read More</button>
+                    <button class="btn btn-info">
+                      <i class="fa-solid fa-circle-info"></i>
+                      Info
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -471,14 +522,25 @@
         <!-- Documentation code for Image  -->
 
         <h1 class="component-heading">Image</h1>
-        <h3 class="component-desc">Image description.</h3>
+        <h3 class="component-desc">
+          Images make a website more attractive and adds value when presenting
+          important information. Simple UI provides responsive images and round
+          images.
+        </h3>
         <h2 class="component-subheading">Responsive Image</h2>
-        <h4 class="component-subdesc">Image subdescription</h4>
+        <h4 class="component-subdesc">
+          Responsive image fits to parent's width and height and it adjusts
+          according to screen size. Add
+          <span class="class-name">.image-responsive</span>
+          to the img tag in your code.
+        </h4>
 
         <!-- Responsive Image-->
 
         <div class="component-preview">
-          <img src="../../images/image.jpeg" class="image-responsive" />
+          <div class="image-preview">
+            <img src="../../images/image.jpeg" class="image-responsive" />
+          </div>
         </div>
 
         <pre>
@@ -489,13 +551,22 @@
 
         <!-- Round Image -->
         <h2 class="component-subheading">Round Image</h2>
-        <h4 class="component-subdesc">Round Image subdescription</h4>
+        <h4 class="component-subdesc">
+          Round Image also derives width and height from parent class and
+          adjusts according to screen size. Add
+          <span class="class-name">.round-image</span> to the img tag in
+          addition to <span class="class-name">.image-responsive</span> to make
+          it responsive and round. <br /><span class="class-name">Note</span>:
+          It should always be wrapped in a div with specifc width.
+        </h4>
 
         <div class="component-preview">
-          <img
-            src="../../images/profile.jpeg"
-            class="image-responsive round-image"
-          />
+          <div class="image-preview-round">
+            <img
+              src="../../images/profile.jpeg"
+              class="image-responsive round-image"
+            />
+          </div>
         </div>
 
         <pre>
@@ -506,9 +577,16 @@
         <!-- Documentation code for Input -->
 
         <h1 class="component-heading">Input</h1>
-        <h3 class="component-desc">Input description.</h3>
+        <h3 class="component-desc">
+          Inputs are used to take input from user and Simple UI provides 3 basic
+          input boxes.
+        </h3>
         <h2 class="component-subheading">Input with different variations</h2>
-        <h4 class="component-subdesc">Input subdescription</h4>
+        <h4 class="component-subdesc">
+          Input contains input label, input and error message. Use
+          <span class="class-name">.input-container</span> to a div containing
+          label, input element and with span containing success,error message.
+        </h4>
 
         <!-- Simple input box -->
 
@@ -556,12 +634,49 @@
 
         <!-- Documentation for Lists -->
 
-        <!-- Normal lists-->
+        <!-- Spaced lists-->
 
         <h1 class="component-heading">Lists</h1>
-        <h3 class="component-desc">List description.</h3>
-        <h2 class="component-subheading">Normal lists</h2>
-        <h4 class="component-subdesc">Lists subdescription</h4>
+        <h3 class="component-desc">
+          Lists can be used to display contents in order either vertically or
+          horizontal. It can be used in notification pages, menu, menu dropdowns
+          etc.
+        </h3>
+        <h2 class="component-subheading">Spaced lists</h2>
+        <h4 class="component-subdesc">Spaced lists have list items inline. This type of lists used for menu items in menu bar. To use this add class <span class="class-name">.spaced-list</span> to your &lt;ul&gt; or &lt;ol&gt; element. </h4>
+        <div class="component-preview">
+          <div class="spaced-list-preview">
+            <ul class="spaced-list">
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+              <li>Five</li>
+            </ul>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html">
+              &lt;ul class="spaced-list"&gt;
+                &lt;li&gt;One&lt;/li&gt;
+                &lt;li&gt;Two&lt;/li&gt;
+                &lt;li&gt;Three&lt;/li&gt;
+                &lt;li&gt;Four&lt;/li&gt;
+                &lt;li&gt;Five&lt;/li&gt;
+              &lt;/ul&gt;
+          </code>
+        </pre>
+
+        <!-- Stacked lists -->
+
+        <h2 class="component-subheading">Stacked lists</h2>
+        <h4 class="component-subdesc">
+          Unordered list have shapes like bullets, squares whereas ordered list
+          have numbers and alphabets. Simple UI provides 2 unordered and 2
+          ordered lists. Add <span class="class-name">.list</span> and for list style add <span class="class-name">.list-circle</span>,
+          <span class="class-name">.list-square</span>, <span class="class-name">.list-alpha</span>.
+        </h4>
 
         <div class="component-preview">
           <ul class="list list-circle">
@@ -633,41 +748,19 @@
           </code>
         </pre>
 
-        <!-- Stacked list -->
-        <h2 class="component-subheading">Stacked Lists</h2>
-        <h4 class="component-subdesc">Lists subdescription</h4>
-        <div class="component-preview">
-          <ul class="list stacked">
-            <li class="list-header">Notifications (5)</li>
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-            <li>Four</li>
-            <li>Five</li>
-          </ul>
-        </div>
-
-        <pre>
-          <code class="language-html">
-            &lt;ul class="list stacked"&gt;
-              &lt;li class="list-header"&gt;Notifications (5)&lt;/li&gt;
-              &lt;li&gt;One&lt;/li&gt;
-              &lt;li&gt;Two&lt;/li&gt;
-              &lt;li&gt;Three&lt;/li&gt;
-              &lt;li&gt;Four&lt;/li&gt;
-              &lt;li&gt;Five&lt;/li&gt;
-            &lt;/ul&gt;
-          </code>
-        </pre>
-
         <!-- Documentation for Rating -->
 
-        <!-- Normal lists-->
-
         <h1 class="component-heading">Rating</h1>
-        <h3 class="component-desc">Rating description.</h3>
+        <h3 class="component-desc">
+          Rating can be used in reviews section and to display products rating
+          which is read only.
+        </h3>
         <h2 class="component-subheading">Rating</h2>
-        <h4 class="component-subdesc">Rating subdescription</h4>
+        <h4 class="component-subdesc">
+          Use .rating and .read-only-4 for 4 stars read only rating. Read only
+          class follwed by number is used to show rating and number range is
+          0-5.
+        </h4>
 
         <div class="component-preview">
           <div class="rating">
@@ -695,9 +788,12 @@
         <!-- Normal lists-->
 
         <h1 class="component-heading">Text</h1>
-        <h3 class="component-desc">Text description.</h3>
-        <h2 class="component-subheading">Text</h2>
-        <h4 class="component-subdesc">Text subdescription</h4>
+        <h3 class="component-desc">
+          Simple UI provides 6 header text, paragraph of 5 sizes, gray text and
+          center text
+        </h3>
+        <h2 class="component-subheading">Header Text</h2>
+        <h4 class="component-subdesc">Simple UI provides 5 different Header text ranging from &lt;h1&gt; to &lt;h5&gt;.</h4>
 
         <!-- HTML for headers -->
         <div class="component-preview">
@@ -706,29 +802,6 @@
           <h3>Header Text - h3</h3>
           <h4>Header Text - h4</h4>
           <h5>Header Text - h5</h5>
-          <br />
-
-          <!-- HTML for text of various sizes. -->
-
-          <p class="xl-text">Lorem ipsum</p>
-          <p class="l-text">Lorem ipsum</p>
-          <p class="md-text">Lorem ipsum</p>
-          <br />
-
-          <!-- Small text -->
-
-          <p class="sm-text">Lorem ipsum</p>
-          <p class="xs-text">Lorem ipsum</p>
-          <br />
-
-          <!-- Gray text -->
-
-          <p class="l-text gray-text">Lorem ipsum</p>
-          <br />
-
-          <!-- center text -->
-
-          <p class="l-text center-text">Lorem ipsum</p>
         </div>
 
         <pre>
@@ -738,17 +811,80 @@
             &lt;h3&gt;Header Text - h3&lt;/h3&gt;
             &lt;h4&gt;Header Text - h4&lt;/h4&gt;
             &lt;h5&gt;Header Text - h5&lt;/h5&gt;
+          </code>
+        </pre>
+
+        <!-- HTML for text of various sizes. -->
+
+        <h2 class="component-subheading">Text in Paragraph</h2>
+        <h4 class="component-subdesc">
+          Use <span class="class-name">.xl-text</span>, <span class="class-name">.l-text</span>, <span class="class-name">.md-text</span> for extra large text, large text and
+          medium text respectively.
+        </h4>
+
+        <div class="component-preview">
+          <p class="xl-text">Extra Large Text</p>
+          <p class="l-text">Large text</p>
+          <p class="md-text">Medium text</p>
+        </div>
+
+        <pre>
+          <code class="language-html">
   
-            &lt;p class="xl-text"&gt;Lorem ipsum&lt;/p&gt;
-            &lt;p class="l-text"&gt;Lorem ipsum&lt;/p&gt;
-            &lt;p class="md-text"&gt;Lorem ipsum&lt;/p&gt;
-  
-            &lt;p class="sm-text"&gt;Lorem ipsum&lt;/p&gt;
-            &lt;p class="xs-text"&gt;Lorem ipsum&lt;/p&gt;
-  
-            &lt;p class="l-text gray-text"&gt;Lorem ipsum&lt;/p&gt;
-  
-            &lt;p class="l-text center-text"&gt;Lorem ipsum&lt;/p&gt;
+            &lt;p class="xl-text"&gt;Extra Large Text&lt;/p&gt;
+            &lt;p class="l-text"&gt;Large text&lt;/p&gt;
+            &lt;p class="md-text"&gt;Medium text&lt;/p&gt;
+
+          </code>
+        </pre>
+
+        <!-- Small text -->
+
+        <h2 class="component-subheading">Small Text</h2>
+        <h4 class="component-subdesc">
+          Use <span class="class-name">.sm-text</span>, <span class="class-name">.xs-text</span> for small and extra small text.
+        </h4>
+
+        <div class="component-preview">
+          <p class="sm-text">Small text</p>
+          <p class="xs-text">Extra small text</p>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;p class="sm-text"&gt;Small text&lt;/p&gt;
+            &lt;p class="xs-text"&gt;Extra small text&lt;/p&gt;
+          </code>
+        </pre>
+        <!-- Gray text -->
+
+        <h2 class="component-subheading">Gray Text</h2>
+        <h4 class="component-subdesc">Use <span class="class-name">.gray-text</span> for gray text.</h4>
+
+        <div class="component-preview">
+          <p class="l-text gray-text">Gray Text</p>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;p class="l-text gray-text"&gt;Gray Text&lt;/p&gt;
+          </code>
+        </pre>
+
+        <!-- center text -->
+
+        <h2 class="component-subheading">Center Text</h2>
+        <h4 class="component-subdesc">
+          Use <span class="class-name">.center-text</span> for text which is always centered to its parent
+        </h4>
+
+        <div class="component-preview">
+          <p class="l-text center-text">Centered Text</p>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &lt;p class="l-text center-text"&gt;Centered Text&lt;/p&gt;
           </code>
         </pre>
       </div>
@@ -766,8 +902,8 @@
           <li id="image" onclick="load('image')">Image</li>
           <li id="input" onclick="load('input')">Input</li>
           <li id="lists" onclick="load('lists')">Lists</li>
-          <li id="text" onclick="load('text')">Text</li>
           <li id="rating" onclick="load('rating')">Ratings</li>
+          <li id="text" onclick="load('text')">Text</li>
         </ol>
       </div>
     </div>
