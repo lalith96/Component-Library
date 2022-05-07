@@ -1,9 +1,7 @@
+@import url("../docs/css/styles.css");
+
 html {
   font-size: 100%;
-}
-
-body {
-  margin: 0px;
 }
 
 header {

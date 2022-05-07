@@ -1,0 +1,44 @@
+/* CSS for Alert  */
+
+.alert {
+  width: auto;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: var(--white-color);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.alert i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.alert-primary {
+  background-color: var(--primary-color);
+}
+
+.alert-secondary {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+
+.alert-success {
+  background-color: var(--green-color);
+}
+
+.alert-warning {
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.alert-info {
+  background-color: var(--action-color);
+}
+
+.alert-dark {
+  background-color: var(--black-color);
+  opacity: 0.7;
+}
