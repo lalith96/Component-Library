@@ -123,6 +123,11 @@ header {
   color: var(--primary-color);
 }
 
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
 code {
   border-radius: 8px;
   font-size: 14px;
@@ -186,7 +191,11 @@ code {
   background-color: var(--secondary-color);
 }
 
-.space{
-  width:100%;
-  height:70px;
+.space {
+  width: 100%;
+  height: 70px;
+}
+
+section {
+  padding-top: 75px;
 }
