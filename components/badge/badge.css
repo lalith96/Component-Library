@@ -1,0 +1,40 @@
+/* CSS for Badge  */
+
+.badge {
+  display: inline-block;
+  position: relative;
+  font-size: 3em;
+}
+
+.icon-area {
+  width: 1em;
+  height: 1em;
+}
+
+.badge-on-avatar {
+  width: 13%;
+  height: 13%;
+  position: absolute;
+  top: 75%;
+  left: 81%;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+}
+
+.badge-on-icon {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  right: -18%;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+}
+
+.badge-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 0.25em;
+}
